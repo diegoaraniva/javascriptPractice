@@ -1,0 +1,1 @@
+alert("Clase uno, JS Externo");
