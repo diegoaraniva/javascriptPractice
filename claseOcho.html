@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Ocho</title>
+    <script src="js/claseOcho.js"></script>
+</head>
+<body> <!-- onload="mostrarMensaje()": Al usar el onload, se cargará el onload unicamente, cuando llama a una funcion, es como si redirigiera a otra pagina -->
+    <script>
+
+        //Solo muestra una funcion
+        mostrarMensaje();
+
+        //Asigna un valor a la variable radio, para la funcion calcularArea();
+        var radio = prompt("Ingrese el radio: ");
+
+        //Asigna un valores a las variables importe e impuesto, para la funcion totalPago();
+        var importe = prompt("Ingrese el importe: ");
+        var impuesto = prompt("Ingrese el impuesto: ");
+
+
+        var cadena = prompt("Ingrese el texto: ");
+        var tipo = prompt("Ingrese el 'Minuscula' o 'Mayuscula' para seleccionar el tipo de texto a convertir: ");
+        document.write("El texto ingresado convertido es: " + conversionCadena(cadena, tipo) + "<br />");
+
+    </script>
+    <button onclick="calcularArea(radio);">Calcular Area</button>
+    <button onclick="totalPago(importe, impuesto);">Calcular Total</button> 
+</body>
+</html>
