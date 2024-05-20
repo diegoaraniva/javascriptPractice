@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/claseDoce.js"></script>
+    <title>Clase Doce</title>
+</head>
+
+<body onload="eventoCarga('Al finalizar de cargar el elemento')">
+
+    <h1>Hola mundo</h1>
+    <h2 class="parrafos">Hola uno</h2>
+    <h2 class="parrafos">Hola dos</h2>
+    <p id="parrafo">Hola mundo</p>
+    <button onclick="obtenerElementos()">Obtener elementos</button>
+
+    <input type="text" onkeypress="eventoTexto('Cuando se presiona una tecla (Solo si el elemento está enfocado)')"
+    onkeydown="eventoTexto('Cuando una tecla queda presionada (Solo si el elemento está enfocado)')"
+    onkeyup="eventoTexto('Cuando se suelta la tecla (Solo si el elemento está enfocado)')"
+    onfocus="eventoTexto('Cuando la caja de texto esté enfocada')"
+    onblur="eventoTexto('Cuando la caja de texto pierda el enfoque')"
+    onchange="eventoTexto('Cuando se modifique el elemento')">
+
+    <button onclick="evento('Click')" 
+    ondblclick="evento('Doble click')" 
+    oncontextmenu="evento('Click derecho')"
+    onmousedown="evento('Click abajo incluyendo click derecho')"
+    onmouseup="evento('Soltando click incluyendo click derecho')"
+    onmouseenter="evento('Entrando el cursor al elemento')"
+    onmouseleave="evento('Sacando el cursor del elemento')"
+    onmouseover="evento('Entrando el cursor, incluyendo elementos hijos')"
+    onmouseout="evento('Entrando el cursor, incluyendo elementos hijos')"
+    onmousemove="evento('Cada vez que el cursor se mueva dentro del elemento')"
+    onmousewheel="evento('Cada vez que se utilice el wheel del mouse, cuando el cursor este dentro del elemento')">Boton de prueba</button>  
+</body>
+</html>
